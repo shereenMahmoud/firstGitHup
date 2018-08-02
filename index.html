@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myaction.js"></script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+
+	
+<body>
+   <nav class="navbar navbar-inverse" id="navBar">
+  <div class="container-fluid" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="./assets/Capture1.png" width="50px"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     
+      <ul class="nav navbar-nav navbar-right">
+          
+          
+          
+          <li > <a href="#"> <span class="glyphicon glyphicon-search"></span>
+                 </a></li>
+          <li><a href="#">العربيه</a></li>
+          <li><a href="#">admins</a></li>
+          <li><a href="#">medical</a></li>
+        <li><a href="#">
+          <span class="glyphicon glyphicon-envelope"></span>
+        </a></li>
+          
+        <li> <a href="#"><span class="num">2</span>
+          <span class="glyphicon glyphicon-bell"></span>
+        </a></li>
+          
+       
+          <li><a href="#">
+          <span class="glyphicon glyphicon-calendar"></span>
+        </a></li>
+          
+          <li class="dropdown">
+              
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>hello : </span><span id="userName" class="blue"> user name </span> <span class="caret blue" ></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="#">profile</a></li>
+              <li><a href="#">log Out</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+ <div class="col-sm-2 side"><ul id="side">
+     
+  <li>  <img id="userImg" src="./assets/userImg.png" class="img-circle" width="65px" alt="Cinque Terre"><div id="userInfo"><h4>User Name </h4><h5>Member Job Title </h5></div></br></li> 
+  
+    
+    <li class="raw"><div class="panel-group">
+    <div class="panel-heading"> 
+        <a data-toggle="collapse" class=".dropbtn" href="#collapse"><span class="glyphicon glyphicon-dashboard ">  Dashboard</a>  
+        
+    </div>
+         <div id="collapse" class="panel-collapse collapse content">
+             
+      <div href="#" class="panel-body">1 </div>
+      <div class="panel-body">2</div>
+      <div class="panel-body">3</div> 
+  </div>
+</div></li>
+   
+    <li class="raw"><div class="panel-group">
+    <div class="panel-heading">     
+        <a data-toggle="collapse" class=".dropbtn" href="#collapse0"><span class=" glyphicon glyphicon-file"></span>  Orders<span class="badge" style="float:right;color: white">3</span></a>
+    </div>
+         <div id="collapse0" class="panel-collapse collapse content">
+      <div href="#" class="panel-body"> </div>
+      <div class="panel-body"></div>
+      <div class="panel-body"></div> 
+  </div>
+</div>
+    </li>
+    
+    
+   
+      <li class="raw"><div class="panel-group">
+    <div class="panel-heading">      
+        <a data-toggle="collapse"class=".dropbtn" href="#collapse1"><span class="glyphicon glyphicon-star"></span> Favourites<span class="caret" style="float:right"></span></a>  
+    </div>
+    <div id="collapse1" class="panel-collapse collapse content">
+      <div href="#" class="panel-body"> </div>
+      <div class="panel-body"></div>
+      <div class="panel-body"></div> 
+  </div>
+</div></li>
+     
+       
+        <li class="raw"><div class="panel-group">
+    <div class="panel-heading">    
+        <a data-toggle="collapse" class=".dropbtn" href="#collapse2"><span class="glyphicon glyphicon-star"></span>  Personnele<span class="caret" style="float:right"></span></a>  
+    </div>
+    <div id="collapse2" class="panel-collapse collapse content">
+      <div href="#" class="panel-body">department and divisions </div>
+      <div class="panel-body">sub2 </div>
+      <div class="panel-body">sub3 </div>
+  </div>
+</div></li>
+    
+     <li class="raw"><div class="panel-group">
+    <div class="panel-heading">  
+        <a data-toggle="collapse" class=".dropbtn" href="#collapse4"><span class="glyphicon glyphicon-briefcase"></span>  Module Name <span class="caret" style="float:right"></span></a>    
+    </div>
+    <div id="collapse4" class="panel-collapse collapse content">
+      <div href="#" class="panel-body">department and divisions </div>
+      <div class="panel-body">sub2 </div>
+      <div class="panel-body">sub3 </div>
+    </div>
+</div></li>
+    
+    
+     <li class="raw"><div class="panel-group">
+    <div class="panel-heading">   
+        <a data-toggle="collapse" class=".dropbtn" href="#collapse5"><span class="glyphicon glyphicon-inbox"></span>  Programs<span class="caret" style="float:right "></span></a>    
+    </div>
+    <div id="collapse5" class="panel-collapse collapse content">
+      <div href="#" class="panel-body">department and divisions </div>
+      <div class="panel-body">sub2 </div>
+      <div class="panel-body">sub3 </div>
+    </div>
+</div></li>
+    
+    
+ <li class="raw" class="list"><div class="panel-group" >
+    <div class="panel-heading" >      
+        <a data-toggle="collapse" class=".dropbtn" href="#collapse6" ><span class="glyphicon glyphicon-list-alt"></span>  Reports<span class="caret" style="float:right"></span></a>  
+    </div>
+    <div id="collapse6" class="panel-collapse collapse content">
+      <div href="#" class="panel-body">Department and divisions </div>
+      <div class="panel-body">sub2 </div>
+      <div class="panel-body">sub3 </div>
+    </div>
+</div></li>
+    
+    
+     <li class="raw"><div class="panel-group">
+    <div class="panel-heading">      
+        <a data-toggle="collapse" class=".dropbtn" href="#collapse3"><span class="glyphicon  glyphicon-download-alt"></span> Setups<span class="caret" style="float:right"></span></a>
+      
+    </div>
+    <div id="collapse3" class="panel-collapse collapse content">
+      <div href="#" class="panel-body">department and divisions </div>
+      <div class="panel-body">sub2 </div>
+      <div class="panel-body">sub3 </div>
+ 
+  </div>
+</div></li>
+     </ul></div>
+
+
+<div id="non" class="col-sm-10"><img id="bg" src="./assets/bg.jpg" width="100%" height="275px" />
+<div id="line" class="gray"><img id="dashImg" src="./assets/dashboar.png" width="22px"/><h4 class="blue">/HR</h4><h4 class="blue">/Personnel</h4><h4>/Departmentand divisions</h4></div>
+<h3 id="header">Department and divisions</h3>
+    <div class="raw">
+         
+    <div id="left"  class="col-sm-4 shadow">               
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"><img src="./assets/plus.png"/>
+      Chaiman Of The Board
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion3">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseOnec"><img src="./assets/plus.png"/>
+				General Administration
+			  </a>
+			</div>
+			<div id="collapseOnec" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion4">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseOned"><img src="./assets/plus.png"/>
+		Chief executive officer
+			  </a>
+			</div>
+			<div id="collapseOned" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion5">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseOnee"><img src="./assets/plus.png"/>
+	Infiction control dep
+			  </a>
+			</div>
+			<div id="collapseOnee" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <a href="#"> Communicable diseases</a></br>
+               <a href="#">  Momitoring, Evaluation surveillence</a></br>
+                <a href="#">  CSSD services</a></br>
+                <a href="#">  Health officer</a></br>
+                <a href="#">  Nurse infection control</a></br> 
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+                  
+                  
+                  
+                  
+                
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2Two"><img src="./assets/plus.png"/>
+      Marketion andPR dep
+      </a>
+    </div>
+    <div id="collapse2Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion23">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion23" href="#collapse2c"><img src="./assets/plus.png"/>
+				#####
+			  </a>
+			</div>
+			<div id="collapse2c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion24">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion24" href="#collapseOned"><img src="./assets/plus.png"/>
+		#####
+			  </a>
+			</div>
+			<div id="collapse2d" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion25">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion25" href="#collapseOnee"><img src="./assets/plus.png"/>
+	############
+			  </a>
+			</div>
+			<div id="collapse2e" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                ####
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+                  
+                  
+                  
+                  
+                
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3Two"><img src="./assets/plus.png"/>
+     HR dep
+      </a>
+    </div>
+    <div id="collapse3Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion33">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion33" href="#collapse3c"><img src="./assets/plus.png"/>
+				######
+			  </a>
+			</div>
+			<div id="collapse3c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion34">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion34" href="#collapse3d"><img src="./assets/plus.png"/>
+		############
+			  </a>
+			</div>
+			<div id="collapseOned" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion35">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion35" href="#collapse3e">
+	
+                  #######
+			  </a>
+			</div>
+			<div id="collapseOnee" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                ///
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+                  
+                  
+                  
+                  
+                
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4Two"><img src="./assets/plus.png"/>
+      finance department
+      </a>
+    </div>
+    <div id="collapse4Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion43">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion43" href="#collapse4c"><img src="./assets/plus.png"/>
+				######
+			  </a>
+			</div>
+			<div id="collapse4c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion44">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion44" href="#collapseOned"><img src="./assets/plus.png"/>
+		########
+			  </a>
+			</div>
+			<div id="collapse4d" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion45">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion45" href="#collapse4e">
+	#########
+			  </a>
+			</div>
+			<div id="collapse4e" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                ///////
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+            </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse5Two"><img src="./assets/plus.png"/>
+      Medical department
+      </a>
+    </div>
+    <div id="collapse5Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion53">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion53" href="#collapse5c"><img src="./assets/plus.png"/>
+			#####
+			  </a>
+			</div>
+			<div id="collapse5c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion54">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion54" href="#collapseOned"><img src="./assets/plus.png"/>
+		#######
+			  </a>
+			</div>
+			<div id="collapse5d" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion55">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion55" href="#collapseOnee">
+########
+			  </a>
+			</div>
+			<div id="collapseOnee" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                ///////
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+                  
+                  
+                  
+                  
+                
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+
+
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse6Two"><img src="./assets/plus.png"/>
+     Nusing department
+      </a>
+    </div>
+    <div id="collapse6Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion63">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion63" href="#collapse6c"><img src="./assets/plus.png"/>
+			######
+			  </a>
+			</div>
+			<div id="collapse6c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion64">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion64" href="#collapse6d"><img src="./assets/plus.png"/>
+		######
+			  </a>
+			</div>
+			<div id="collapse6d" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion65">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion65" href="#collapse6e"><img src="./assets/plus.png"/>
+	#####
+			  </a>
+			</div>
+			<div id="collapse6e" class="accordion-body collapse">
+			  <div class="accordion-inner">
+              #####
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+                  
+                  
+                  
+                  
+                
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion72" href="#collapse7Two"><img src="./assets/plus.png"/>
+    Operation department
+      </a>
+    </div>
+    <div id="collapse7Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion73">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion73" href="#collapse7c"><img src="./assets/plus.png"/>
+				General Administration
+			  </a>
+			</div>
+			<div id="collapse7c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion74">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion74" href="#collapse7d"><img src="./assets/plus.png"/>
+		77777
+			  </a>
+			</div>
+			<div id="collapse7d" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion75">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion75" href="#collapse7e">
+	77
+			  </a>
+			</div>
+			<div id="collapseOnee" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                ///////
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+                  
+                  
+                  
+                  
+                
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion82" href="#collapse8Two"><img src="./assets/plus.png"/>
+     Quality department
+      </a>
+    </div>
+    <div id="collapse8Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion83">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion83" href="#collapse8c"><img src="./assets/plus.png"/>
+			8888888
+			  </a>
+			</div>
+			<div id="collapse8c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion84">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion84" href="#collapse8d"><img src="./assets/plus.png"/>
+		88888888888
+			  </a>
+			</div>
+			<div id="collapse8d" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion85">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion85" href="#collapse8e"><img src="./assets/plus.png"/>
+	8888888
+			  </a>
+			</div>
+			<div id="collapse8e" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             88
+			  </div>
+			</div>
+		  </div>
+		
+		</div> 
+                  
+            
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+</div>
+ <div class="accordion-group">
+     <div><a href="#"> Secretary</a></div></div>
+
+
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion92" href="#collapse9Two"><img src="./assets/plus.png"/>
+     Projects
+      </a>
+    </div>
+    <div id="collapse9Two" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+        <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+        <div class="accordion" id="accordion93">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion93" href="#collapse9c"><img src="./assets/plus.png"/>
+				999999
+			  </a>
+			</div>
+			<div id="collapse9c" class="accordion-body collapse">
+			  <div class="accordion-inner">
+             
+                 <div class="accordion" id="accordion94">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion94" href="#collapse9d"><img src="./assets/plus.png"/>
+		999999999
+			  </a>
+			</div>
+			<div id="collapse9d" class="accordion-body collapse">
+			  <div class="accordion-inner">
+                 <div class="accordion" id="accordion95">
+		
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion95" href="#collapse9e"><img src="./assets/plus.png"/>
+99999999
+			  </a>
+			</div>
+			<div id="collapse9e" class="accordion-body collapse">
+			  <div class="accordion-inner">
+               99
+			  </div>
+			</div>
+		  </div>
+		
+		</div> </div>
+			</div>
+		  </div>
+		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+
+       </div>
+      </div>
+
+</div>
+<div id="right"   class="col-sm-8">
+    <div id="rightContent"class="shadow">
+    <div id="line2" class="gray">
+    <a href="#" class="glyphicon glyphicon-plus blue margin" >Add Unit</a>
+    <a href="#" class="glyphicon glyphicon-print blue margin" >  Print  </a>
+   <a href="#" class="glyphicon glyphicon-remove red margin" >  Delete   </a>
+        <a href="#"  class="glyphicon glyphicon-remove myx" ></a> 
+         <a href="#" style="float:right" class="glyphicon glyphicon-minus myx" ></a> 
+    </div>
+      <form id="form" class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="ID">Unit ID</label>
+      <div class="col-sm-8">
+        <input type="email" class="form-control" id="ID" placeholder="Unit ID" name="Unit ID">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="ArabicName">Arabic Name</label>
+      <div class="col-sm-8">          
+        <input type="Name" class="form-control" id="ArabicName" placeholder="Arabic Name" name="AabicName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="EnglishName">English Name</label>
+      <div class="col-sm-8">          
+        <input type="Name" class="form-control" id="EnglishName" placeholder="English Name" name="EnglishName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="ParentID">Parent ID</label>
+      <div class="col-sm-8">          
+        <input type="ParentID" class="form-control" id="ParentID" placeholder="Parent ID" name="ParentID">
+      </div>
+    </div>
+          
+          
+      <p class="section">For Last Level</p> 
+          <hr>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="CostCenter">Cost Center</label>
+      <div class="col-sm-8">          
+        <input type="Name" class="form-control" id="CostCenter" placeholder="Cost Center" name="CostCenter">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="SectionHead">Section Head</label>
+      <div class="col-sm-8">          
+        <input type="SectionHead" class="form-control" id="SectionHead" placeholder="Section Head" name="SectionHead">
+      </div>
+    </div>
+     <div class="form-group">
+  <label for="DepartmentType"class="control-label col-sm-2" >Depatrment Type</label>
+         <div class="col-sm-8">
+              
+  <select class="form-control" id="DepartmentType">
+    <option>Nurse Station</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+  </div>
+     <div class="form-group">
+  <label for="NurseUnit"class="control-label col-sm-2" >Nurse Unit</label>
+         <div class="col-sm-8">
+              
+  <select class="form-control" id="Nurse Unit">
+    <option>Nurse Unit</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+  </div>
+     <div class="form-group">
+  <label for="Store Qty Availability"class="control-label col-sm-2" >Store Qty Availability</label>
+         <div class="col-sm-8">
+              
+  <select class="form-control" id="StoreQtyAvailability">
+    <option>Yes</option>
+    <option>No</option>
+    <option>3</option>
+  </select>
+</div>
+  </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="StockName">Stock Name</label>
+      <div class="col-sm-8">          
+        <input type="Name" class="form-control" id="StockName" placeholder="Stock Name" name="StockNamer">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="PharmacyName">Pharmacy Name</label>
+      <div class="col-sm-8">          
+        <input type="Name" class="form-control" id="PharmacyName" placeholder="Pharmacy Name" name="PharmacyName">
+      </div>
+    </div>
+   
+  </form>  
+    <p class="section">Places</p>
+    <hr>
+     <a href="#" class="glyphicon glyphicon-plus blue margin" >Add Place  </a>
+    <button  id="save" >Save </button>
+    </div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
